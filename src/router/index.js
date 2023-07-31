@@ -11,6 +11,12 @@ const routes = [
     component: HomeView
   },
   {
+    // Dynamic Route
+    path:"/student/:id",
+    name:'studentDetails',
+    component:()=>import('@/views/students/components/StudentDetails.vue')
+  },
+  {
     path: '/about',
     name: 'about',
     // route level code-splitting
